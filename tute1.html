@@ -1,3 +1,84 @@
 <script>
-    console.log("Hellc, world");
+    // q1; console.log("Hello, world");
+
+    // var grade = 70;
+
+    // if (grade >= 85) {
+    //     console.log("You got HD");
+    // }
+    // else if (grade >= 75) {
+    //     console.log("You got D");
+    // }
+    // else if (grade >= 65) {
+    //     console.log("You got C");
+    // }
+    // else {
+    //     console.log("You have failed. :-( ");
+    // }
+    
+    // var grade = 70;
+    // switch (true) {
+    //     case grade >= 85:
+    //         console.log("You got HD");
+    //         break; // Take note of break!
+    //     case grade >= 75:
+    //         console.log("You got D");
+    //         break;
+    //     case grade >= 65:
+    //         console.log("You got C");
+    //         break;
+    //     default:
+    //         console.log("You have failed : -( ");
+    // }
+
+    var inputArr = [23, 9, 14, 2, 28, 19, 3, 15, 9, 25, 2, 4, 9]
+
+    function mean(inputArr) {
+        // your code
+        var me = 0;
+        for (var i = 0; i < inputArr.length; i++) {
+            // console.log(inputArr[i]); //outputs the value of i
+            me += inputArr[i];
+        }
+        
+        console.log(me/inputArr.length);
+        return me/inputArr.length;
+    }
+    // to implement
+    function median(arr) {
+        // your code
+        const mid = Math.floor(arr.length / 2);
+        nums = [...arr].sort((a, b) => a - b);
+        console.log(arr.length % 2 !== 0 ? nums[mid] : (nums[mid - 1] + nums[mid]) / 2);
+        return arr.length % 2 !== 0 ? nums[mid] : (nums[mid - 1] + nums[mid]) / 2;
+    }
+
+    function mode(array) {
+        // your code
+         var frequency = []; // array of frequency.
+        var maxFreq = 0; // holds the max frequency.
+        var modes = [];
+
+        for (var i in array) {
+            frequency[array[i]] = (frequency[array[i]] || 0) + 1; // increment frequency.
+
+            if (frequency[array[i]] > maxFreq) { // is this frequency > max so far ?
+                maxFreq = frequency[array[i]]; // update max.
+            }
+        }
+
+        for (var k in frequency) {
+            if (frequency[k] == maxFreq) {
+                modes.push(k);
+            }
+        }
+
+        console.log(modes);
+        return modes;
+    }
+
+    mean(inputArr); //invoking mean function
+    median(inputArr); //invoking median function
+    mode(inputArr); //invoking mean function
+
 </script>
