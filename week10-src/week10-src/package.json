@@ -1,0 +1,21 @@
+{
+  "name": "week9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.4",
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.5",
+    "path": "^0.12.7",
+    "pug": "^2.0.3",
+    "request": "^2.88.0"
+  }
+}

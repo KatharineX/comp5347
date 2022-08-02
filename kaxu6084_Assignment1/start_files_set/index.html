@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8" />
+    <title>COMP5347 Assignment One</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- <link rel="icon" href="/image/book.ico"/> -->
+    <link rel=“icon” href=”favicon.ico” type=“image/x-icon”>
+    <!-- <link rel=“shortcut icon” href=“favicon.ico” type=“image/x-icon”> -->
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+    <form method="get" action="" id="mainForm">
+      <h1>B2YBooks</h1>
+
+      <div id="searchBox0">
+        <input class="leftFloat" type="checkbox" id="toggle-darkmode" />
+        <label class="switch leftFloat" for="toggle-darkmode"
+          ><span>Light/Dark Mode</span></label
+        >
+      </div>
+      <!-- Will contain search, filter, add to card and reset cart -->
+      <div id="searchBox">
+        <input id="searchBar" type="search" name="title" size="40" />
+        <button id="searchBarButton">search</button>
+        <select name="categoryFilter" id="categoryFilter" class="dropdownList">
+          <option>All</option>
+          <option>Geography</option>
+        </select>
+        <button id="filterBarButton">Filter</button>
+
+        <span class="leftFloat">)</span
+        ><span id="shoppingCartValue" class="leftFloat"></span
+        ><span class="leftFloat">(</span>
+
+        <!-- shopping cart image -->
+        <img
+          id="shoppingCart"
+          class="leftFloat"
+          src="images/shopping_cart.png"
+          alt="shopping-cart"
+        />
+
+        <button id="addCartButton" class="leftFloat">Add to cart</button>
+        <button id="resetCartButton" class="leftFloat">Reset the cart</button>
+      </div>
+
+      <!-- book table -->
+      <div id="listBox" class="changeColor">
+        <table>
+          <thead id="tableHead"></thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </form>
+  </body>
+</html>

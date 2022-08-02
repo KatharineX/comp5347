@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+        <meta charset="utf-8">
+        <title>COMP5347 Assignment 2</title>
+	</head>
+	<body>
+      <div class="image">
+        <img src="Image1.png" alt="First Image">
+        <button class="delete">Delete</button>
+      </div>
+      <div class="image">
+        <img src="Image2.png" alt="Second Image">
+        <button class="delete">Delete</button>
+      </div>
+
+
+      <div class="image">
+      <img src="Image2.png" alt="Second Image">
+      <button class="delete">Delete</button>
+    </div>
+
+    <h3 align=center>I just want to say <% Response.Write "Hello World.</H3><BR>" %>  
+Your name is: <% Response.Write Request.QueryString("name") %> <br>
+
+	</body>
+  <script>
+
+  function Update() {
+    // Write your code here.
+  }
+
+  // Example case.
+  document.body.innerHTML = `
+  <div class="image">
+    <img src="Image1.png" alt="First Image">
+    <button class="delete">Delete</button>
+  </div>
+  <div class="image">
+    <img src="Image2.png" alt="Second Image">
+    <button class="delete">Delete</button>
+  </div>`;
+
+  Update();
+
+  $(".delete").get(0).click();
+  console.log(document.body.innerHTML);
+
+
+
+  </script>
+</html>
